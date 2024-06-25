@@ -1,0 +1,17 @@
+.home__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
+
+.cards__container {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.cards__container a {
+  color: inherit;
+  text-decoration: none;
+}
