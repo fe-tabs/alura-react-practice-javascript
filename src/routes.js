@@ -1,3 +1,4 @@
+import Banner from "components/Banner";
 import Footer from "components/Footer";
 import Header from "components/Header";
 import Home from "pages/Home";
@@ -7,6 +8,7 @@ export default function AppRoutes() {
   return (
     <BrowserRouter>
       <Header/>
+      <Banner/>
       
       <Routes>
         <Route path="/" element={<Home/>}/>
