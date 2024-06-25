@@ -1,7 +1,11 @@
 .header {
   background-color: var(--black);
   color: var(--white);
-  padding: 1.1em 20em;
+}
+
+.header__container {
+  max-width: 1200px;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;

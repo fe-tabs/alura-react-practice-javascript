@@ -2,7 +2,12 @@
   background-color: var(--black);
   color: var(--white);
   text-align: center;
-  padding: 1.1em 20em;
+}
+
+.footer__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.1em 0;
 }
 
 .footer__text {
