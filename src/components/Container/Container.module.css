@@ -1,4 +1,4 @@
-.container {
+.container > section {
   max-width: 1200px;
   text-align: center;
   margin: 2em auto 8em;
