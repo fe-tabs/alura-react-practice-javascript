@@ -5,7 +5,7 @@ import movies from 'mocks/movies.json';
 
 export default function Home() {
   return(
-    <div className={styles['home__container']}>
+    <>
       <Title>
         <h1>
           Um lugar para guardar seus vídeos e filmes!
@@ -19,6 +19,6 @@ export default function Home() {
           </a>
         ))}
       </section>
-    </div>
+    </>
   );
 }

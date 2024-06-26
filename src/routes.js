@@ -1,4 +1,5 @@
 import Banner from "components/Banner";
+import Container from "components/Container";
 import Footer from "components/Footer";
 import Header from "components/Header";
 import Home from "pages/Home";
@@ -10,9 +11,11 @@ export default function AppRoutes() {
       <Header/>
       <Banner/>
       
-      <Routes>
-        <Route path="/" element={<Home/>}/>
-      </Routes>
+      <Container>
+        <Routes>
+          <Route path="/" element={<Home/>}/>
+        </Routes>
+      </Container>
 
       <Footer/>
     </BrowserRouter>
