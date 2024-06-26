@@ -1,8 +1,9 @@
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import styles from './HeaderLink.module.css';
 
 export default function HeaderLink({ url, children }) {
-  const isCurrentUrl = url === window.location.pathname;
+  const currentUrl = useLocation();
+  const isCurrentUrl = url === currentUrl.pathname;
 
   return(
     <Link 
