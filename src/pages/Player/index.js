@@ -2,15 +2,18 @@ import Banner from 'components/Banner';
 import styles from './Player.module.css';
 import Title from 'components/Title';
 import { useParams } from 'react-router-dom';
-import movies from 'mocks/movies.json';
 import NotFound from 'pages/NotFound';
-
+import { useEffect, useState } from 'react';
 
 export default function Player() {
   const params = useParams();
-  const movie = movies.find(movie => {
-    return movie.id === Number(params.id);
-  })
+  const [movie, setMovie] = useState(null);
+
+  useEffect(() => {
+    fetch(`http://localhost:5500/movies/${params.id}`)
+      .then(res => res.json())
+      .then(data => setMovie(data));
+  }, []);
 
   if(!movie) {
     return <NotFound/>;
