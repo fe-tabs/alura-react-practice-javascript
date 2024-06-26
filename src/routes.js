@@ -4,6 +4,7 @@ import Header from "components/Header";
 import FavoriteProvider from "contexts/FavoriteContext";
 import Favorite from "pages/Favorite";
 import Home from "pages/Home";
+import Player from "pages/Player";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 export default function AppRoutes() {
@@ -16,6 +17,7 @@ export default function AppRoutes() {
           <Routes>
             <Route path="/" element={<Home/>}/>
             <Route path="/favorite" element={<Favorite/>}/>
+            <Route path="/:id" element={<Player/>}/>
           </Routes>
         </FavoriteProvider>
       </Container>
