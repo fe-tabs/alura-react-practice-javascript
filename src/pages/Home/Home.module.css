@@ -4,8 +4,3 @@
   flex-wrap: wrap;
   justify-content: center;
 }
-
-.cards__container a {
-  color: inherit;
-  text-decoration: none;
-}

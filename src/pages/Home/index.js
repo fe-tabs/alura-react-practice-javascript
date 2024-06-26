@@ -14,9 +14,7 @@ export default function Home() {
 
       <section className={styles['cards__container']}>
         {movies.map(movie => (
-          <a href={movie.url} target='_blank' rel='noreferrer'>
-            <Card key={movie.id} {...movie}/>
-          </a>
+          <Card key={movie.id} {...movie}/>
         ))}
       </section>
     </>
