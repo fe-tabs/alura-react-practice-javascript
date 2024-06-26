@@ -3,6 +3,7 @@ import styles from './Player.module.css';
 import Title from 'components/Title';
 import { useParams } from 'react-router-dom';
 import movies from 'mocks/movies.json';
+import NotFound from 'pages/NotFound';
 
 
 export default function Player() {
@@ -10,6 +11,10 @@ export default function Player() {
   const movie = movies.find(movie => {
     return movie.id === Number(params.id);
   })
+
+  if(!movie) {
+    return <NotFound/>;
+  }
 
   return(
     <>
